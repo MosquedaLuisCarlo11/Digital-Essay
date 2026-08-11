@@ -1229,4 +1229,4 @@ body.dark-mode .pref-image-icon { filter: invert(0.9) brightness(1.2); }
 @media(max-width: 480px) {
   .phone-split-container { flex-direction: column; gap: 0.5rem; }
   .phone-country-select { width: 100%; }
-}
+} 
