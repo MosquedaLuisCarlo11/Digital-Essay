@@ -1,3 +1,94 @@
+// ==============================================
+// Dark & Light Mode Context Swapper
+// ==============================================
+const button = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
+
+body.classList.add('preload-theme');
+
+const savedTheme = localStorage.getItem('mosavid-theme');
+
+if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
+    if (themeIcon) {
+        themeIcon.src = 'images/dark.png';
+        themeIcon.alt = 'Switch to Light Mode';
+    }
+} else {
+    // Default to light mode
+    body.classList.add('light-mode');
+    body.classList.remove('dark-mode');
+    if (themeIcon) {
+        themeIcon.src = 'images/light.png';
+        themeIcon.alt = 'Switch to Dark Mode';
+    }
+}
+
+setTimeout(() => {
+    body.classList.remove('preload-theme');
+}, 100);
+
+if (button) {
+    button.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+
+        const isDarkMode = body.classList.contains('dark-mode');
+
+        if (isDarkMode) {
+            themeIcon.src = 'images/dark.png';
+            themeIcon.alt = 'Switch to Light Mode';
+            localStorage.setItem('mosavid-theme', 'dark');
+        } else {
+            themeIcon.src = 'images/light.png';
+            themeIcon.alt = 'Switch to Dark Mode';
+            localStorage.setItem('mosavid-theme', 'light');
+        }
+    });
+}
+
+// ==============================================
+// Dropdown Setup & Smooth Scrolling
+// ==============================================
+const optionsBtn = document.querySelector('.options-btn');
+if (optionsBtn) {
+    optionsBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        document.querySelector('.options-dropdown').classList.toggle('open');
+    });
+}
+
+document.addEventListener('click', function () {
+    const dropdown = document.querySelector('.options-dropdown');
+    if (dropdown && dropdown.classList.contains('open')) {
+        dropdown.classList.remove('open');
+    }
+});
+
+// Enable Smooth Scroll offset for fixed header
+document.querySelectorAll('.nav-links a, .logo').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 90;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: targetId === '#top' ? 0 : offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
 

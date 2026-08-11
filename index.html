@@ -9,19 +9,42 @@
 </head>
 <body>
     <!-- Top Black Bar & Nav (From previous step) -->
-    <div class="top-bar"></div>
-    <header class="main-header">
-        <nav class="nav-links">
-            <a href="#">ABOUT</a>
-            <a href="#">PRIVATE</a>
-            <a href="#">CORPORATE</a>
-            <a href="#">CAREERS</a>
-        </nav>
-        <div class="logo">The Horizon Initiative</div>
-        <div class="nav-action">
-            <a href="#" class="btn-outline">CONTACT</a>
+<header class="main-header" id="top">
+    <!-- Left: Language Selector -->
+    <div class="header-left">
+        <div class="options-dropdown">
+            <button class="options-btn" aria-label="Toggle Language">
+                <img src="images/language.png" class="nav-icon" alt="Language Selector" />
+            </button>
+            <div class="options">
+                <a href="#" class="lang-switch" data-lang="es">Español</a>
+                <a href="#" class="lang-switch" data-lang="en">English</a>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Center: Main Title & Navigation Links -->
+    <div class="header-center">
+        <a href="#top" class="logo">THE HORIZON INITIATIVE</a>
+        <nav class="nav-links">
+            <a href="#fundamentals">FUNDAMENTALS</a>
+            <a href="#stats">STATS</a>
+            <a href="#real-cases">REAL CASES</a>
+            <a href="#take-action">TAKE ACTION</a>
+            <a href="#donations">TRUSTED FOUNDATIONS</a>
+            <a href="#contact">SUGGESTIONS</a>
+        </nav>
+    </div>
+
+    <!-- Right: Theme Switcher -->
+    <div class="header-right">
+        <div class="cta-buttons">
+            <button class="icon-action-btn" id="theme-toggle" aria-label="Toggle Theme">
+                <img src="images/dark.png" class="nav-icon" id="theme-icon" alt="Toggle Theme Layout" />
+            </button>
+        </div>
+    </div>
+</header>
 
     <!-- Pinned Scroll Sequence -->
 <main class="scroll-container">
@@ -37,7 +60,7 @@
 
                 <!-- Phase 2 Content -->
                 <div class="phase phase-2">
-                    <h1 class="large-title">What its our<br>Goal?</h1>
+                    <h1 class="large-title">What is our<br>Goal?</h1>
                     <div class="phase-2-text">
                         <p>To make a difference in the world, we must first understand the challenges faced by those in need. This page aims to shed light on the key issues affecting vulnerable communities and encourage meaningful action.</p>
                     </div>
@@ -47,10 +70,8 @@
     </section>
 </main>
 
-<section class="vo-section">
+<section class="vo-section" id="fundamentals">
     <div class="container-wide">
-    <span class="label" data-i18n="philLabel">The Core of the Crisis</span>
-    <div class="rule"></div>
     <h2 data-i18n="philTitle">In order to grasp the fundamental aspects of this issue, <br/><em>consider the following four questions:</em></h2>    
     <div class="v-wrapper bg-primary">
         <div class="o-wrapper pt-11 pt-4sm">
@@ -110,15 +131,13 @@
 
     <!-- SECTION 2: Outline Text Divider -->
 <section class="divider-section">
-    
-    <!-- Centered Outline Text -->
     <div class="divider-content">
-        <h2 class="outline-text">TRAVEL DESIGNED<br>AROUND YOU</h2>
+        <h2 class="outline-text">RECOGNIZING THE PATTERN IS THE FIRST STEP TOWARD CHANGE.<br>SO TAKE THAT FIRST STEP.</h2>
     </div>
 </section>
 
 <!-- The Parallax Section -->
-<section class="mountain-parallax-section">
+<section class="mountain-parallax-section" id="stats">
     
     <!-- Middle Layer: Text Content -->
     <div class="stats-content">
@@ -130,13 +149,13 @@
                 <span class="stat-number">117.8 Million</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label">NET PROMOTOR SCORE</span>
-                <span class="stat-number">460 Million</span>
-            </div>
-            <div class="stat-item">
                 <span class="stat-label">AVERAGE AGENT EXPERIENCE</span>
                 <span class="stat-number">80% to 90%</span>
                 <span class="stat-label sub-label">YEARS</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">NET PROMOTOR SCORE</span>
+                <span class="stat-number">460 Million</span>
             </div>
         </div>
     </div>
@@ -146,7 +165,7 @@
     
 </section>
 
-    <section class="updates-section">
+    <section class="updates-section" id="real-cases">
         <div class="updates-header">
             <span class="subheading">The Reality on the Ground</span>
             <h2>Behind every staggering statistic is a human life affected by violence. To grasp the impact of global conflicts, we must hear from those who experienced them. These ten case studies highlight communities facing adversity, showcasing that even in darkness, courage, solidarity, and hope endure.</h2>
@@ -155,8 +174,8 @@
         <div class="updates-list">
             <!-- Item 1 -->
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/migration.png"
+            data-hero="images/migration.png"
             data-title="The Train of Death Migration Crisis"
             data-author="Mexico"
             data-date="1995–Present"
@@ -172,8 +191,8 @@
 
             <!-- Item 2 -->
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/military.png"
+            data-hero="images/military.png"
             data-title="The Rise of Unarmed Civilian Protection"
             data-author="Global"
             data-date="2002-Present"
@@ -188,8 +207,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/cheran.png"
+            data-hero="images/cheran.png"
             data-title="The Cherán Indigenous Uprising"
             data-author="Mexico"
             data-date="2011"
@@ -204,8 +223,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/syrian.png"
+            data-hero="images/syrian.png"
             data-title="The Syrian Civil War and Refugee Crisis"
             data-author="Syria"
             data-date="2011–Present"
@@ -220,8 +239,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/southSudan.webp"
+            data-hero="images/southSudan.webp"
             data-title="Civil War and the Protection of Civilians (POC) Sites"
             data-author="South Sudan"
             data-date="2013–Present"
@@ -236,8 +255,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/myanmar.png"
+            data-hero="images/myanmar.png"
             data-title="The Military Coup and Civilian Resistance"
             data-author="Myanmar"
             data-date="2021–Present"
@@ -252,8 +271,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/afghanistan.png"
+            data-hero="images/afghanistan.png"
             data-title="The Fall of Kabul and Erasure of Women's Rights"
             data-author="Afghanistan"
             data-date="2021–Present"
@@ -268,8 +287,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/ukraine.png"
+            data-hero="images/ukraine.png"
             data-title="The Full-Scale Invasion and Infrastructure Crisis"
             data-author="Ukraine"
             data-date="2022–Present"
@@ -284,8 +303,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/sudan.png"
+            data-hero="images/sudan.png"
             data-title="The Armed Conflict and Displacement Crisis"
             data-author="Sudan"
             data-date="2023–Present"
@@ -300,8 +319,8 @@
             </a>
 
             <a href="#" class="update-item" 
-            data-hover="images/allProdcuts.png"
-            data-hero="images/allProdcuts.png"
+            data-hover="images/gaza.png"
+            data-hero="images/gaza.png"
             data-title="The Humanitarian and Healthcare Crisis"
             data-author="Gaza"
             data-date="2023–Present"
@@ -316,12 +335,10 @@
             </a>
         </div>
 
-        <!-- Keep the floating image container for desktop -->
         <div id="floating-image-container">
             <img id="floating-image" src="images/allProdcuts.png" alt="Floating Preview">
         </div>
 
-        <!-- Full Screen Article Modal -->
         <div id="article-modal" class="article-modal">
             <button class="close-modal" id="close-modal" aria-label="Cerrar modal">&larr; Back</button>
             
@@ -352,7 +369,7 @@
 
 </section>
     
-    <section class="padding-global padding-section-large is-bottom-0">
+    <section class="padding-global padding-section-large is-bottom-0" id="take-action">
     <div class="container-max">
         
         <div class="journey_heading">
@@ -373,9 +390,9 @@
                 <div class="journey_item is-1 align-right">
                     <div class="item-content">
                         <div class="badge">1</div>
-                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop" alt="Strategy Meeting" loading="lazy">
-                        <h3>Volunteer</h3>
-                        <p>Your time at local shelters, refugee resettlement programs, or community organizations.</p>
+                        <img src="images/Speak.png" alt="Strategy Meeting" loading="lazy">
+                        <h3>Amplify Frontline Voices</h3>
+                        <p>Share these documented stories and raise awareness about grassroots civilian protection. Keeping global attention on active conflict zones helps protect local advocates and drives international accountability.</p>
                     </div>
                 </div>
 
@@ -383,9 +400,9 @@
                 <div class="journey_item is-2 align-left">
                     <div class="item-content">
                         <div class="badge">2</div>
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="Team Collaboration" loading="lazy">
-                        <h3>Organize</h3>
-                        <p>fundraising events in your community to raise awareness and vital support.</p>
+                        <img src="images/networks.png" alt="Team Collaboration" loading="lazy">
+                        <h3>Engage with Local Networks</h3>
+                        <p>Connect with community-led peacebuilding organizations and nonviolent response teams. Offer your time, skills, or platform to back the grassroots networks fighting for human rights on the ground.</p>
                     </div>
                 </div>
 
@@ -393,16 +410,16 @@
                 <div class="journey_item is-3 align-right">
                     <div class="item-content">
                         <div class="badge">3</div>
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop" alt="Active Support" loading="lazy">
-                        <h3>Advocate</h3>
-                        <p>For policies that support vulnerable communities by signing petitions and contacting local representatives.</p>
+                        <img src="images/donate.png" alt="Active Support" loading="lazy">
+                        <h3>Fund Direct Relief</h3>
+                        <p>Your donations directly support trusted foundations delivering emergency healthcare, food aid, and nonviolent civilian protection to vulnerable families trapped in extreme conflict.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-        <section class="donations">
+        <section class="donations" id="donations">
             <div class="option">
                 <div class="option-flex">
                     <div class="option-title">
@@ -410,7 +427,7 @@
                         <h1>Trusted Foundations for Direct Support</h1>
                     </div>
                     <div class="option-paragraph">
-                        <p>Your donations directly fund the initiatives protecting and sustaining vulnerable lives.</p>
+                        <p>Every contribution directly empowers grassroots movements, emergency responders, and human rights advocates operating on the frontlines of global crises. By supporting trusted foundations, your generosity provides immediate food aid, emergency healthcare, and nonviolent civilian protection where it is needed most. Together, we can restore dignity, foster long-term community resilience, and build a safer future for vulnerable lives facing extreme adversity.</p>
                     </div>
                 </div>
             </div>
@@ -445,139 +462,139 @@
             </section>
         </section>
 
-        <section class="form-section-wrapper">
-  <div class="form-wizard-container">
-    
-    <div class="wizard-header">
-      <div class="step-tab active" data-step="1">
-        <span class="step-num">I</span> Tu Nombre
-      </div>
-      <div class="step-tab" data-step="2">
-        <span class="step-num">II</span> Método de Contacto
-      </div>
-      <div class="step-tab" data-step="3">
-        <span class="step-num">III</span> Nota
-      </div>
-    </div>
-
-    <form id="multi-step-form" novalidate>
-      
-      <div class="form-step active" id="step-1">
-        <p class="step-subtitle">Paso 1</p>
-        <h2 class="step-title">Tu Nombre</h2>
-        <p class="step-description">Por favor, introduce tus datos para saber con quién nos estamos comunicando.</p>
-
-        <div class="form-grid">
-          <div class="input-group">
-            <label for="first-name">Nombre<span class="required">*</span></label>
-            <input type="text" id="first-name" placeholder="Ingresa tu nombre" required>
-            <span class="error-msg">El nombre es obligatorio.</span>
-          </div>
-          <div class="input-group">
-            <label for="last-name">Apellido<span class="required">*</span></label>
-            <input type="text" id="last-name" placeholder="Ingresa tu apellido" required>
-            <span class="error-msg">El apellido es obligatorio.</span>
-          </div>
-          <div class="input-group full-width">
-            <label for="nickname">Apodo / Cómo te llamamos <span class="optional">(Opcional)</span></label>
-            <input type="text" id="nickname" placeholder="¿Cómo prefieres que te llamemos?">
-          </div>
+    <section class="form-section-wrapper" id="contact">
+    <div class="form-wizard-container">
+        
+        <div class="wizard-header">
+        <div class="step-tab active" data-step="1">
+            <span class="step-num">I</span> Your Name
         </div>
-      </div>
+        <div class="step-tab" data-step="2">
+            <span class="step-num">II</span> Contact Method
+        </div>
+        <div class="step-tab" data-step="3">
+            <span class="step-num">III</span> Note
+        </div>
+        </div>
 
-      <div class="form-step" id="step-2">
-        <p class="step-subtitle">Paso 2</p>
-        <h2 class="step-title">Método de Contacto</h2>
-        <p class="step-description">Selecciona cómo prefieres que nuestro equipo se ponga en contacto contigo.</p>
+        <form id="multi-step-form" novalidate>
+        
+        <div class="form-step active" id="step-1">
+            <p class="step-subtitle">Step 1</p>
+            <h2 class="step-title">Your Name</h2>
+            <p class="step-description">Please enter your details so we know who we are communicating with.</p>
 
-<div class="contact-preference-grid">
-  <label class="pref-card">
-    <input type="radio" name="contact-method" value="email" checked>
-    <div class="pref-content">
-      <img src="images/mail.png" alt="Email" class="pref-image-icon">
-      <span class="pref-label">Correo Electrónico</span>
-    </div>
-  </label>
-  <label class="pref-card">
-    <input type="radio" name="contact-method" value="phone">
-    <div class="pref-content">
-      <img src="images/phone.png" alt="Teléfono" class="pref-image-icon">
-      <span class="pref-label">Teléfono / Celular</span>
-    </div>
-  </label>
-</div>
-
-        <div class="form-grid" style="margin-top: 1.5rem;">
-          <div class="input-group full-width" id="email-field-group">
-            <label for="contact-email">Dirección de Correo<span class="required">*</span></label>
-            <input type="email" id="contact-email" placeholder="ejemplo@correo.com">
-            <span class="error-msg">Por favor, ingresa un correo electrónico válido.</span>
-          </div>
-          <div class="input-group full-width hidden" id="phone-field-group">
-            <label>Número de Teléfono<span class="required">*</span></label>
-            <div class="phone-split-container">
-              <select id="country-code" class="phone-country-select">
-                <option value="+1">🇺🇸 +1 (US)</option>
-                <option value="+34" selected>🇪🇸 +34 (ES)</option>
-                <option value="+52">🇲🇽 +52 (MX)</option>
-                <option value="+57">🇨🇴 +57 (CO)</option>
-                <option value="+54">🇦🇷 +54 (AR)</option>
-                <option value="+56">🇨🇱 +56 (CL)</option>
-                <option value="+51">🇵🇪 +51 (PE)</option>
-              </select>
-              <input type="tel" id="contact-phone" class="phone-local-input" placeholder="600-000000" maxlength="11">
+            <div class="form-grid">
+            <div class="input-group">
+                <label for="first-name">First Name<span class="required">*</span></label>
+                <input type="text" id="first-name" placeholder="Enter your first name" required>
+                <span class="error-msg">First name is required.</span>
             </div>
-            <span class="error-msg">Por favor, ingresa un número de teléfono válido.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-step" id="step-3">
-        <p class="step-subtitle">Paso 3</p>
-        <h2 class="step-title">Nota</h2>
-        <p class="step-description">Ayúdanos a categorizar tu solicitud y déjanos tus comentarios detallados abajo.</p>
-
-        <div class="form-grid">
-          <div class="input-group full-width">
-            <label>Selecciona una Categoría<span class="required">*</span></label>
-            <div class="category-selector">
-              <button type="button" class="cat-btn active" data-category="concert">Consulta de Producto</button>
-              <button type="button" class="cat-btn" data-category="product">Inquietud</button>
-              <button type="button" class="cat-btn" data-category="touch">Mantenerse en Contacto</button>
-              <button type="button" class="cat-btn" data-category="other">Otro</button>
+            <div class="input-group">
+                <label for="last-name">Last Name<span class="required">*</span></label>
+                <input type="text" id="last-name" placeholder="Enter your last name" required>
+                <span class="error-msg">Last name is required.</span>
             </div>
-            <input type="hidden" id="selected-category" value="concert">
-          </div>
-
-          <div class="input-group full-width" style="margin-top: 0.5rem;">
-            <label for="contact-reason">Motivo del Contacto<span class="required">*</span></label>
-            <textarea id="contact-reason" rows="5" placeholder="Escribe tus dudas, inquietudes o comentarios aquí..." required></textarea>
-            <span class="error-msg">Por favor, escribe el motivo de tu mensaje.</span>
-          </div>
+            <div class="input-group full-width">
+                <label for="nickname">Nickname / What should we call you <span class="optional">(Optional)</span></label>
+                <input type="text" id="nickname" placeholder="What do you prefer us to call you?">
+            </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Mensaje Exitoso Dinámico (Oculto inicialmente) -->
-      <div class="success-message-box hidden" id="success-screen">
-        <span class="success-icon">✓</span>
-        <h2 class="success-title">¡Formulario Enviado!</h2>
-        <p class="success-text">Tu solicitud ha sido procesada con éxito. Nos pondremos en contacto contigo muy pronto.</p>
-      </div>
+        <div class="form-step" id="step-2">
+            <p class="step-subtitle">Step 2</p>
+            <h2 class="step-title">Contact Method</h2>
+            <p class="step-description">Select how you prefer our team to contact you.</p>
 
-      <!-- Pie de página de navegación -->
-      <div class="wizard-footer" id="wizard-footer-nav">
-        <button type="button" id="prev-btn" class="nav-btn btn-secondary invisible">
-          ‹ Atrás
-        </button>
-        <button type="button" id="next-btn" class="nav-btn btn-primary">
-          Siguiente Paso ›
-        </button>
-      </div>
+    <div class="contact-preference-grid">
+    <label class="pref-card">
+        <input type="radio" name="contact-method" value="email" checked>
+        <div class="pref-content">
+        <img src="images/mail.png" alt="Email" class="pref-image-icon">
+        <span class="pref-label">Email Address</span>
+        </div>
+    </label>
+    <label class="pref-card">
+        <input type="radio" name="contact-method" value="phone">
+        <div class="pref-content">
+        <img src="images/phone.png" alt="Phone" class="pref-image-icon">
+        <span class="pref-label">Phone / Mobile</span>
+        </div>
+    </label>
+    </div>
 
-    </form>
-  </div>
+            <div class="form-grid" style="margin-top: 1.5rem;">
+            <div class="input-group full-width" id="email-field-group">
+                <label for="contact-email">Email Address<span class="required">*</span></label>
+                <input type="email" id="contact-email" placeholder="example@email.com">
+                <span class="error-msg">Please enter a valid email address.</span>
+            </div>
+            <div class="input-group full-width hidden" id="phone-field-group">
+                <label>Phone Number<span class="required">*</span></label>
+                <div class="phone-split-container">
+                <select id="country-code" class="phone-country-select">
+                    <option value="+1">🇺🇸 +1 (US)</option>
+                    <option value="+34" selected>🇪🇸 +34 (ES)</option>
+                    <option value="+52">🇲🇽 +52 (MX)</option>
+                    <option value="+57">🇨🇴 +57 (CO)</option>
+                    <option value="+54">🇦🇷 +54 (AR)</option>
+                    <option value="+56">🇨🇱 +56 (CL)</option>
+                    <option value="+51">🇵🇪 +51 (PE)</option>
+                </select>
+                <input type="tel" id="contact-phone" class="phone-local-input" placeholder="600-000000" maxlength="11">
+                </div>
+                <span class="error-msg">Please enter a valid phone number.</span>
+            </div>
+            </div>
+        </div>
 
-</section>
+        <div class="form-step" id="step-3">
+            <p class="step-subtitle">Step 3</p>
+            <h2 class="step-title">Note</h2>
+            <p class="step-description">Help us categorize your request and leave your detailed comments below.</p>
+
+            <div class="form-grid">
+            <div class="input-group full-width">
+                <label>Select a Category<span class="required">*</span></label>
+                <div class="category-selector">
+                <button type="button" class="cat-btn active" data-category="concert">Make A Suggestion</button>
+                <button type="button" class="cat-btn" data-category="product">Concern</button>
+                <button type="button" class="cat-btn" data-category="touch">Keep in Touch</button>
+                <button type="button" class="cat-btn" data-category="other">Other</button>
+                </div>
+                <input type="hidden" id="selected-category" value="concert">
+            </div>
+
+            <div class="input-group full-width" style="margin-top: 0.5rem;">
+                <label for="contact-reason">Reason for Contact<span class="required">*</span></label>
+                <textarea id="contact-reason" rows="5" placeholder="Write your questions, concerns, or comments here..." required></textarea>
+                <span class="error-msg">Please write the reason for your message.</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Dynamic Success Message (Hidden initially) -->
+        <div class="success-message-box hidden" id="success-screen">
+            <span class="success-icon">✓</span>
+            <h2 class="success-title">Form Submitted!</h2>
+            <p class="success-text">Your request has been processed successfully. We will contact you very soon.</p>
+        </div>
+
+        <!-- Footer Navigation -->
+        <div class="wizard-footer" id="wizard-footer-nav">
+            <button type="button" id="prev-btn" class="nav-btn btn-secondary invisible">
+            ‹ Back
+            </button>
+            <button type="button" id="next-btn" class="nav-btn btn-primary">
+            Next Step ›
+            </button>
+        </div>
+
+        </form>
+    </div>
+
+    </section>
 
     <!-- GSAP Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
