@@ -861,6 +861,12 @@ body.dark-mode {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
 .card img {
     width: 100%;
     height: 180px;
