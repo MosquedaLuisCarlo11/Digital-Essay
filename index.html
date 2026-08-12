@@ -8,9 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Black Bar & Nav (From previous step) -->
+
 <header class="main-header" id="top">
-    <!-- Left: Language Selector -->
     <div class="header-left">
         <div class="options-dropdown">
             <button class="options-btn" aria-label="Toggle Language">
@@ -18,25 +17,24 @@
             </button>
             <div class="options">
                 <a href="#" class="lang-switch" data-lang="es">Español</a>
+                <a href="#" class="lang-switch" data-lang="fr">Français</a>
                 <a href="#" class="lang-switch" data-lang="en">English</a>
             </div>
         </div>
     </div>
 
-    <!-- Center: Main Title & Navigation Links -->
     <div class="header-center">
         <a href="#top" class="logo">THE HORIZON INITIATIVE</a>
         <nav class="nav-links">
-            <a href="#fundamentals">FUNDAMENTALS</a>
-            <a href="#stats">STATS</a>
-            <a href="#real-cases">REAL CASES</a>
-            <a href="#take-action">TAKE ACTION</a>
-            <a href="#donations">TRUSTED FOUNDATIONS</a>
-            <a href="#contact">SUGGESTIONS</a>
+            <a href="#fundamentals" id="nav-fundamentals">FUNDAMENTALS</a>
+            <a href="#stats" id="nav-stats">STATS</a>
+            <a href="#real-cases" id="nav-real-cases">REAL CASES</a>
+            <a href="#take-action" id="nav-take-action">TAKE ACTION</a>
+            <a href="#donations" id="nav-donations">TRUSTED FOUNDATIONS</a>
+            <a href="#contact" id="nav-contact">SUGGESTIONS</a>
         </nav>
     </div>
 
-    <!-- Right: Theme Switcher -->
     <div class="header-right">
         <div class="cta-buttons">
             <button class="icon-action-btn" id="theme-toggle" aria-label="Toggle Theme">
@@ -46,23 +44,18 @@
     </div>
 </header>
 
-    <!-- Pinned Scroll Sequence -->
 <main class="scroll-container">
     <section class="hero-scroll-section">
         <div class="grid-overlay"></div>
-        
         <div class="mask-wrapper">
             <div class="hero-content">
-                <!-- Phase 1 Content -->
                 <div class="phase phase-1">
-                    <h1>Understanding the Crisis,<br>Inspiring Action</h1>
+                    <h1 id="hero-title-1">Understanding the Crisis,<br>Inspiring Action</h1>
                 </div>
-
-                <!-- Phase 2 Content -->
                 <div class="phase phase-2">
-                    <h1 class="large-title">What is our<br>Goal?</h1>
+                    <h1 class="large-title" id="hero-title-2">What is our<br>Goal?</h1>
                     <div class="phase-2-text">
-                        <p>To make a difference in the world, we must first understand the challenges faced by those in need. This page aims to shed light on the key issues affecting vulnerable communities and encourage meaningful action.</p>
+                        <p id="hero-desc">To make a difference in the world, we must first understand the challenges faced by those in need. This page aims to shed light on the key issues affecting vulnerable communities and encourage meaningful action.</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +65,7 @@
 
 <section class="vo-section" id="fundamentals">
     <div class="container-wide">
-    <h2 data-i18n="philTitle">In order to grasp the fundamental aspects of this issue, <br/><em>consider the following four questions:</em></h2>    
+    <h2 id="fund-main-title">In order to grasp the fundamental aspects of this issue, <br/><em>consider the following four questions:</em></h2>    
     <div class="v-wrapper bg-primary">
         <div class="o-wrapper pt-11 pt-4sm">
             <div class="d-f fd-c ai-s vo-stack-track">
@@ -81,9 +74,9 @@
                     <div class="vo-card-content">
                         <div class="vo-card-left">01</div>
                         <div class="vo-card-right">
-                                <h3 class="vo-card-title" data-i18n="vo1Title">What are the primary challenges faced by these communities?</h3>                            
-                                <div class="vo-card-body">
-                                <p class="vo-card-desc" data-i18n="vo1Desc">The primary challenge is survival within a conflict zone—a geographical area experiencing ongoing violence, armed conflict, civil unrest, or severe political instability. Within these zones, populations face severe human rights violations. Basic freedoms and protections are violently withheld, resulting in disrupted education, destroyed hospitals, food and water shortages, arbitrary arrests, and the loss of freedom of expression.</p>                            
+                            <h3 class="vo-card-title" id="fund-q1-title">What are the primary challenges faced by these communities?</h3>                            
+                            <div class="vo-card-body">
+                                <p class="vo-card-desc" id="fund-q1-desc">The primary challenge is survival within a conflict zone—a geographical area experiencing ongoing violence, armed conflict, civil unrest, or severe political instability. Within these zones, populations face severe human rights violations. Basic freedoms and protections are violently withheld, resulting in disrupted education, destroyed hospitals, food and water shortages, arbitrary arrests, and the loss of freedom of expression.</p>                            
                             </div>
                         </div>
                     </div>
@@ -93,10 +86,10 @@
                     <div class="vo-card-content">
                         <div class="vo-card-left">02</div>
                         <div class="vo-card-right">
-                            <h3 class="vo-card-title" data-i18n="vo2Title">Why are these challenges significant at a global level?</h3>                            
+                            <h3 class="vo-card-title" id="fund-q2-title">Why are these challenges significant at a global level?</h3>                            
                             <div class="vo-card-body">
-                            <p class="vo-card-desc" data-i18n="vo2Desc">Conflict does not stay contained. When law and order break down, it creates conditions for systemic abuse that ripple across borders. By 2025, an estimated 117.8 million people have been displaced globally. This massive forced displacement destabilizes neighboring regions, strains international humanitarian resources, and threatens global peace.</p>                            
-                        </div>
+                                <p class="vo-card-desc" id="fund-q2-desc">Conflict does not stay contained. When law and order break down, it creates conditions for systemic abuse that ripple across borders. By 2025, an estimated 117.8 million people have been displaced globally. This massive forced displacement destabilizes neighboring regions, strains international humanitarian resources, and threatens global peace.</p>                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,10 +98,10 @@
                     <div class="vo-card-content">
                         <div class="vo-card-left">03</div>
                         <div class="vo-card-right">
-                            <h3 class="vo-card-title" data-i18n="vo3Title">Who is most affected by these challenges?</h3>                            
+                            <h3 class="vo-card-title" id="fund-q3-title">Who is most affected by these challenges?</h3>                            
                             <div class="vo-card-body">
-                            <p class="vo-card-desc" data-i18n="vo3Desc">Civilians bear the heaviest burden. Children are left unable to attend school and are uniquely vulnerable during conflicts. Women, minority groups, and the elderly are disproportionately affected by the denial of basic needs. Furthermore, journalists and humanitarian workers attempting to provide aid or report the truth frequently become targets themselves.</p>                            
-                        </div>
+                                <p class="vo-card-desc" id="fund-q3-desc">Civilians bear the heaviest burden. Children are left unable to attend school and are uniquely vulnerable during conflicts. Women, minority groups, and the elderly are disproportionately affected by the denial of basic needs. Furthermore, journalists and humanitarian workers attempting to provide aid or report the truth frequently become targets themselves.</p>                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,9 +110,9 @@
                     <div class="vo-card-content">
                         <div class="vo-card-left">04</div>
                         <div class="vo-card-right">
-                            <h3 class="vo-card-title" data-i18n="vo4Title">What are some possible solutions to address these issues?</h3>
+                            <h3 class="vo-card-title" id="fund-q4-title">What are some possible solutions to address these issues?</h3>
                             <div class="vo-card-body">
-                                <p class="vo-card-desc" data-i18n="vo4Desc">Solutions require a multi-tiered approach: immediate humanitarian aid (food, water, medical care), international pressure to uphold human rights laws, establishing safe havens for civilians, and Unarmed Civilian Protection (UCP) strategies where trained civilians provide direct, nonviolent protection to vulnerable groups.</p>                            
+                                <p class="vo-card-desc" id="fund-q4-desc">Solutions require a multi-tiered approach: immediate humanitarian aid (food, water, medical care), international pressure to uphold human rights laws, establishing safe havens for civilians, and Unarmed Civilian Protection (UCP) strategies where trained civilians provide direct, nonviolent protection to vulnerable groups.</p>                            
                             </div>
                         </div>
                     </div>
@@ -129,40 +122,213 @@
     </div>
 </section>
 
-    <!-- SECTION 2: Outline Text Divider -->
 <section class="divider-section">
     <div class="divider-content">
-        <h2 class="outline-text">RECOGNIZING THE PATTERN IS THE FIRST STEP TOWARD CHANGE.<br>SO TAKE THAT FIRST STEP.</h2>
+        <h2 class="outline-text" id="divider-text">RECOGNIZING THE PATTERN IS THE FIRST STEP TOWARD CHANGE.<br>SO TAKE THAT FIRST STEP.</h2>
     </div>
 </section>
 
-<!-- The Parallax Section -->
 <section class="mountain-parallax-section" id="stats">
-    
-    <!-- Middle Layer: Text Content -->
     <div class="stats-content">
-        <h2 class="stats-heading">The Global Toll<br>of Conflict</h2>
+        <h2 class="stats-heading" id="stats-title">The Global Toll<br>of Conflict</h2>
         
         <div class="stats-grid">
             <div class="stat-item">
-                <span class="stat-label">REPEAT BOOKINGS</span>
-                <span class="stat-number">117.8 Million</span>
+                <span class="stat-label" id="stat-1-label">REPEAT BOOKINGS</span>
+                <span class="stat-number" id="stat-1-num">117.8 Million</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label">AVERAGE AGENT EXPERIENCE</span>
-                <span class="stat-number">80% to 90%</span>
-                <span class="stat-label sub-label">YEARS</span>
+                <span class="stat-label" id="stat-2-label">AVERAGE AGENT EXPERIENCE</span>
+                <span class="stat-number" id="stat-2-num">80% to 90%</span>
+                <span class="stat-label sub-label" id="stat-2-sub">YEARS</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label">NET PROMOTOR SCORE</span>
-                <span class="stat-number">460 Million</span>
+                <span class="stat-label" id="stat-3-label">NET PROMOTOR SCORE</span>
+                <span class="stat-number" id="stat-3-num">460 Million</span>
+            </div>
+        </div>
+    </div>
+    <img src="images/mountains.webp" alt="Mountain Silhouette" class="mountain-mask">
+</section>
+
+<section class="updates-section" id="real-cases">
+    <div class="updates-header">
+        <span class="subheading" id="cases-subheading">The Reality on the Ground</span>
+        <h2 id="cases-desc">Behind every staggering statistic is a human life affected by violence. To grasp the impact of global conflicts, we must hear from those who experienced them. These ten case studies highlight communities facing adversity, showcasing that even in darkness, courage, solidarity, and hope endure.</h2>
+    </div>
+
+    <div class="updates-list">
+        <a href="#" class="update-item" id="case-1"
+        data-hover="images/migration.png"
+        data-hero="images/migration.png"
+        data-title='The "Train of Death" Migration Crisis'
+        data-author="Mexico"
+        data-date="1995–Present"
+        data-text="Migrants from Central America ride dangerous freight trains north, facing starvation, extortion, and extreme violence along the journey. In response, a group of women known as Las Patronas prepare and throw bags of food and water to the moving trains, demonstrating unconditional solidarity by providing immediate, life-saving nourishment to strangers they will never meet again."
+        data-link="https://www.routedmagazine.com/cocina-de-las-patronas">
+            <div class="update-info">
+                <h3 class="update-title" id="case-1-title">The "Train of Death" Migration Crisis</h3>
+                <span class="update-category" id="case-1-cat">Mexico</span>
+            </div>
+            <span class="update-year" id="case-1-year">1995–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-2"
+        data-hover="images/military.png"
+        data-hero="images/military.png"
+        data-title="The Rise of Unarmed Civilian Protection"
+        data-author="Global"
+        data-date="2002-Present"
+        data-text="Civilians caught in the crossfire of armed conflicts frequently lack physical protection from traditional security forces or armed peacekeepers. To address this, trained civilians enter conflict zones unarmed, using their physical presence, relationship-building, and proactive solidarity to deter violence, proving that courage and a commitment to nonviolence can successfully de-escalate lethal threats."
+        data-link="https://www.dcpeaceteam.org/unarmed-civilian-protection">
+            <div class="update-info">
+                <h3 class="update-title" id="case-2-title">The Rise of Unarmed Civilian Protection</h3>
+                <span class="update-category" id="case-2-cat">Global</span>
+            </div>
+            <span class="update-year" id="case-2-year">2002-Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-3"
+        data-hover="images/cheran.png"
+        data-hero="images/cheran.png"
+        data-title="The Cherán Indigenous Uprising"
+        data-author="Mexico"
+        data-date="2011"
+        data-text="Indigenous communities in Cherán faced rampant illegal logging, extortion, and violence from cartels while local authorities turned a blind eye. Refusing to settle for government corruption, the women and community members blockaded the loggers, expelled the cartels and corrupt police, and successfully rebuilt their own self-governing system, proving that unified, grassroots resistance can reclaim peace and environmental security."
+        data-link="https://www.youtube.com/watch?v=xr1hapswLd0">
+            <div class="update-info">
+                <h3 class="update-title" id="case-3-title">The Cherán Indigenous Uprising</h3>
+                <span class="update-category" id="case-3-cat">Mexico</span>
+            </div>
+            <span class="update-year">2011</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-4"
+        data-hover="images/Syrian.png"
+        data-hero="images/Syrian.png"
+        data-title="The Syrian Civil War and Refugee Crisis"
+        data-author="Syria"
+        data-date="2011–Present"
+        data-text="Over a decade of severe conflict in Syria has resulted in massive displacement, with almost half of Syrian refugee children displaying symptoms of posttraumatic stress disorder (PTSD) after experiencing substantial educational disruptions and trauma. In response, refugee educators and programs in host countries have dedicated efforts to trauma-informed schooling and culturally tailored support, providing a critical semblance of normalcy, safety, and hope to displaced children."
+        data-link="https://www.migrationpolicy.org/publication/educational-and-mental-health-needs-syrian-refugee-children">
+            <div class="update-info">
+                <h3 class="update-title" id="case-4-title">The Syrian Civil War and Refugee Crisis</h3>
+                <span class="update-category" id="case-4-cat">Syria</span>
+            </div>
+            <span class="update-year" id="case-4-year">2011–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-5"
+        data-hover="images/southSudan.webp"
+        data-hero="images/southSudan.webp"
+        data-title="Civil War and the Protection of Civilians (POC) Sites"
+        data-author="South Sudan"
+        data-date="2013–Present"
+        data-text="A brutal civil war in South Sudan led to widespread ethnic violence, forcing hundreds of thousands of civilians to flee their burning villages. To protect those most at risk, the UN opened its peacekeeping bases to fleeing civilians, creating vital Protection of Civilians (POC) sites where UN police and peacekeepers actively patrol to provide safety, acting as the only barrier between life and death for countless displaced families."
+        data-link="https://media.un.org/avlibrary/en/asset/d335/d3358098">
+            <div class="update-info">
+                <h3 class="update-title" id="case-5-title">Civil War and the Protection of Civilians (POC) Sites</h3>
+                <span class="update-category" id="case-5-cat">South Sudan</span>
+            </div>
+            <span class="update-year" id="case-5-year">2013–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-6"
+        data-hover="images/myanmar.png"
+        data-hero="images/myanmar.png"
+        data-title="The Military Coup and Civilian Resistance"
+        data-author="Myanmar"
+        data-date="2021–Present"
+        data-text="Following a military coup on February 1, 2021, civilians in Myanmar faced arbitrary arrests, excessive force, and targeted attacks by security forces on communities, including raids on hospitals and medical professionals. In response, a generation of youth abandoned formal education to form civilian defense networks and underground medical clinics, risking their lives to provide voluntary medical care and protect their communities despite being heavily targeted by the military junta."
+        data-link="https://phr.org/our-work/resources/one-year-anniversary-of-the-myanmar-coup-detat/">
+            <div class="update-info">
+                <h3 class="update-title" id="case-6-title">The Military Coup and Civilian Resistance</h3>
+                <span class="update-category" id="case-6-cat">Myanmar</span>
+            </div>
+            <span class="update-year" id="case-6-year">2021–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-7"
+        data-hover="images/afghanistan.png"
+        data-hero="images/afghanistan.png"
+        data-title="The Fall of Kabul and Erasure of Women's Rights"
+        data-author="Afghanistan"
+        data-date="2021–Present"
+        data-text="The return of the Taliban to power in Afghanistan has led to the systematic stripping of fundamental human rights, particularly barring women and girls from secondary and higher education, employment, and freedom of movement. Despite these draconian policies and the threat of arbitrary arrest or violence, women have organized secret, underground schools, bravely risking their lives and freedom to ensure the next generation of girls is not left in the dark."
+        data-link="https://www.hrw.org/feature/2026/08/03/afghanistan-5-years-under-taliban-rule/a-human-rights-crisis-a-humanitarian">
+            <div class="update-info">
+                <h3 class="update-title" id="case-7-title">The Fall of Kabul and Erasure of Women's Rights</h3>
+                <span class="update-category" id="case-7-cat">Afghanistan</span>
+            </div>
+            <span class="update-year" id="case-7-year">2021–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-8"
+        data-hover="images/ukraine.png"
+        data-hero="images/ukraine.png"
+        data-title="The Full-Scale Invasion and Infrastructure Crisis"
+        data-author="Ukraine"
+        data-date="2022–Present"
+        data-text="Massive destruction of civilian infrastructure across Ukraine has resulted in targeted strikes on hospitals, power grids, and schools. With millions of children having their education disrupted by the conflict, communities and educators have been forced to adapt by creating underground schools in bunkers to keep children safe and learning, as education provides a crucial sense of hope and recovery during crises."
+        data-link="https://www.rescue.org/uk/outcome/education">
+            <div class="update-info">
+                <h3 class="update-title" id="case-8-title">The Full-Scale Invasion and Infrastructure Crisis</h3>
+                <span class="update-category" id="case-8-cat">Ukraine</span>
+            </div>
+            <span class="update-year" id="case-8-year">2022–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-9"
+        data-hover="images/sudan.png"
+        data-hero="images/sudan.png"
+        data-title="The Armed Conflict and Displacement Crisis"
+        data-author="Sudan"
+        data-date="2023–Present"
+        data-text='A violent power struggle starting in April 2023 triggered one of the fastest-growing displacement crises in the world, accompanied by severe humanitarian access restrictions and fighting between armed forces. In the absence of adequate international aid, citizens on the ground formed localized grassroots networks known as "Resistance Committees" to crowdsource medical supplies, provide social protection, and coordinate humanitarian relief, showcasing incredible community survival and resilience.'
+        data-link="https://peacerep.org/wp-content/uploads/2023/07/Abbashar-2023-Sudan-Resistance-Committees.pdf">
+            <div class="update-info">
+                <h3 class="update-title" id="case-9-title">The Armed Conflict and Displacement Crisis</h3>
+                <span class="update-category" id="case-9-cat">Sudan</span>
+            </div>
+            <span class="update-year" id="case-9-year">2023–Present</span>
+        </a>
+
+        <a href="#" class="update-item" id="case-10"
+        data-hover="images/gaza.png"
+        data-hero="images/gaza.png"
+        data-title="The Humanitarian and Healthcare Crisis"
+        data-author="Gaza"
+        data-date="2023–Present"
+        data-text="The Gaza Strip is facing critical shortages of food, clean water, and functioning healthcare facilities amidst intense and ongoing bombardment, resulting in a staggering number of child casualties and widespread disease. Despite these unimaginable conditions—including the lack of power and basic medical supplies—medical workers continue to operate on the severely injured, demonstrating profound sacrifice and an unwavering dedication to saving lives in devastated civilian areas."
+        data-link="https://www.unicef.org/press-releases/least-300-children-reportedly-killed-gaza-past-300-days">
+            <div class="update-info">
+                <h3 class="update-title" id="case-10-title">The Humanitarian and Healthcare Crisis</h3>
+                <span class="update-category" id="case-10-cat">Gaza</span>
+            </div>
+            <span class="update-year" id="case-10-year">2023–Present</span>
+        </a>
+    </div>
+
+    <div id="article-modal" class="article-modal">
+        <button class="close-modal" id="close-modal" aria-label="Cerrar modal">&larr; Back</button>
+        <div class="modal-content">
+            <div class="modal-hero">
+                <img id="modal-hero-image" src="images/allProdcuts.png" alt="Article Cover">
+            </div>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div class="modal-meta">
+                    <span id="modal-author"></span> &nbsp;|&nbsp; <span id="modal-date"></span>
+                </div>
+                <p id="modal-text" class="modal-description"></p>
+                <a href="#" id="modal-link" class="modal-external-link" target="_blank">Visit site &#8599;</a>
             </div>
         </div>
     </div>
 
-    <!-- Top Layer: Transparent Foreground Image (Must be PNG) -->
-    <img src="images/mountains.webp" alt="Mountain Silhouette" class="mountain-mask">
-    
+    <div id="floating-image-container">
+        <img id="floating-image" src="images/allProdcuts.png" alt="Floating Preview">
+    </div>
 </section>
 
     <section class="updates-section" id="real-cases">
@@ -370,55 +536,49 @@
 </section>
     
     <section class="padding-global padding-section-large is-bottom-0" id="take-action">
-    <div class="container-max">
-        
-        <div class="journey_heading">
-            <h2 class="heading-style-h2 text-align-center">Take Meaningful<br>Actions</h2>
-        </div>
 
+        <section class="padding-global padding-section-large is-bottom-0" id="take-action">
+
+    <div class="container-max">
+        <div class="journey_heading">
+            <h2 class="heading-style-h2 text-align-center" id="action-title">Take Meaningful<br>Actions</h2>
+        </div>
         <div class="journey_wrapper">
-            <!-- The Animated SVG Path -->
             <div class="journey_path w-embed">
                 <svg class="path-svg" viewBox="0 0 1000 1400" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg">
-                    <!-- A sample winding path. You can replace the 'd' attribute with an exported path from Figma/Illustrator -->
                     <path id="scroll-line" d="M 650 50 C 650 200, 300 250, 250 500 C 200 800, 750 850, 700 1150 C 650 1400, 300 1450, 300 1500" fill="none" stroke="#d4c3b3" stroke-width="6" stroke-linecap="round"/>
                 </svg>
             </div>
-
             <div class="journey_grid">
-                <!-- Card 1 -->
                 <div class="journey_item is-1 align-right">
                     <div class="item-content">
                         <div class="badge">1</div>
                         <img src="images/Speak.png" alt="Strategy Meeting" loading="lazy">
-                        <h3>Amplify Frontline Voices</h3>
-                        <p>Share these documented stories and raise awareness about grassroots civilian protection. Keeping global attention on active conflict zones helps protect local advocates and drives international accountability.</p>
+                        <h3 id="action-1-title">Amplify Frontline Voices</h3>
+                        <p id="action-1-desc">Share these documented stories and raise awareness about grassroots civilian protection. Keeping global attention on active conflict zones helps protect local advocates and drives international accountability.</p>
                     </div>
                 </div>
-
-                <!-- Card 2 -->
                 <div class="journey_item is-2 align-left">
                     <div class="item-content">
                         <div class="badge">2</div>
                         <img src="images/networks.png" alt="Team Collaboration" loading="lazy">
-                        <h3>Engage with Local Networks</h3>
-                        <p>Connect with community-led peacebuilding organizations and nonviolent response teams. Offer your time, skills, or platform to back the grassroots networks fighting for human rights on the ground.</p>
+                        <h3 id="action-2-title">Engage with Local Networks</h3>
+                        <p id="action-2-desc">Connect with community-led peacebuilding organizations and nonviolent response teams. Offer your time, skills, or platform to back the grassroots networks fighting for human rights on the ground.</p>
                     </div>
                 </div>
-
-                <!-- Card 3 -->
                 <div class="journey_item is-3 align-right">
                     <div class="item-content">
                         <div class="badge">3</div>
                         <img src="images/donate.png" alt="Active Support" loading="lazy">
-                        <h3>Fund Direct Relief</h3>
-                        <p>Your donations directly support trusted foundations delivering emergency healthcare, food aid, and nonviolent civilian protection to vulnerable families trapped in extreme conflict.</p>
+                        <h3 id="action-3-title">Fund Direct Relief</h3>
+                        <p id="action-3-desc">Your donations directly support trusted foundations delivering emergency healthcare, food aid, and nonviolent civilian protection to vulnerable families trapped in extreme conflict.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
         <section class="donations" id="donations">
             <div class="option">
                 <div class="option-flex">
@@ -462,143 +622,178 @@
             </section>
         </section>
 
-    <section class="form-section-wrapper" id="contact">
+<section class="donations" id="donations">
+    <div class="option">
+        <div class="option-flex">
+            <div class="option-title">
+                <span class="section-label" id="donations-label">Donations</span>
+                <h1 id="donations-title">Trusted Foundations for Direct Support</h1>
+            </div>
+            <div class="option-paragraph">
+                <p id="donations-desc">Every contribution directly empowers grassroots movements, emergency responders, and human rights advocates operating on the frontlines of global crises. By supporting trusted foundations, your generosity provides immediate food aid, emergency healthcare, and nonviolent civilian protection where it is needed most. Together, we can restore dignity, foster long-term community resilience, and build a safer future for vulnerable lives facing extreme adversity.</p>
+            </div>
+        </div>
+    </div>
+    <section class="cards">
+        <div class="card">
+            <img src="images/IRC.png" alt="Solar panels">
+            <div class="card-content">
+                <span class="category" id="don-irc-cat">International Rescue Committee (IRC)</span>
+                <span class="date" id="don-irc-focus">Focus:</span>
+                <h3 id="don-irc-desc">Responds to the world's worst humanitarian crises, helping to restore health, safety, education, economic wellbeing, and power to people devastated by conflict and disaster.</h3>
+                <a href="https://help.rescue.org/donate" class="card-link">↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/peaceforce.png" alt="Abstract dots">
+            <div class="card-content">
+                <span class="category" id="don-pf-cat">Peaceforce</span>
+                <span class="date" id="don-pf-focus">Focus:</span>
+                <h3 id="don-pf-desc">Protects civilians in violent conflicts through unarmed strategies, builds peace side-by-side with local communities, and advocates for the wider adoption of these nonviolent approaches</h3>
+                <a href="https://nonviolentpeaceforce.org/make-a-gift/" class="card-link">↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/UNICEF.png" alt="Logistics center">
+            <div class="card-content">
+                <span class="category" id="don-uni-cat">UNICEF (United Nations Children's Fund)</span>
+                <span class="date" id="don-uni-focus">Focus:</span>
+                <h3 id="don-uni-desc">Works in the world's toughest places to reach the most disadvantaged children and adolescents, protecting their rights to survive, thrive, and fulfill their potential.</h3>
+                <a href="https://www.unicefusa.org/how-help/donate" class="card-link">↗</a>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="form-section-wrapper" id="contact">
     <div class="form-wizard-container">
         
         <div class="wizard-header">
-        <div class="step-tab active" data-step="1">
-            <span class="step-num">I</span> Your Name
-        </div>
-        <div class="step-tab" data-step="2">
-            <span class="step-num">II</span> Contact Method
-        </div>
-        <div class="step-tab" data-step="3">
-            <span class="step-num">III</span> Note
-        </div>
+            <div class="step-tab active" data-step="1">
+                <span class="step-num">I</span> <span id="tab-1-text">Your Name</span>
+            </div>
+            <div class="step-tab" data-step="2">
+                <span class="step-num">II</span> <span id="tab-2-text">Contact Method</span>
+            </div>
+            <div class="step-tab" data-step="3">
+                <span class="step-num">III</span> <span id="tab-3-text">Note</span>
+            </div>
         </div>
 
         <form id="multi-step-form" novalidate>
         
         <div class="form-step active" id="step-1">
-            <p class="step-subtitle">Step 1</p>
-            <h2 class="step-title">Your Name</h2>
-            <p class="step-description">Please enter your details so we know who we are communicating with.</p>
+            <p class="step-subtitle" id="step-1-sub">Step 1</p>
+            <h2 class="step-title" id="step-1-title">Your Name</h2>
+            <p class="step-description" id="step-1-desc">Please enter your details so we know who we are communicating with.</p>
 
             <div class="form-grid">
-            <div class="input-group">
-                <label for="first-name">First Name<span class="required">*</span></label>
-                <input type="text" id="first-name" placeholder="Enter your first name" required>
-                <span class="error-msg">First name is required.</span>
-            </div>
-            <div class="input-group">
-                <label for="last-name">Last Name<span class="required">*</span></label>
-                <input type="text" id="last-name" placeholder="Enter your last name" required>
-                <span class="error-msg">Last name is required.</span>
-            </div>
-            <div class="input-group full-width">
-                <label for="nickname">Nickname / What should we call you <span class="optional">(Optional)</span></label>
-                <input type="text" id="nickname" placeholder="What do you prefer us to call you?">
-            </div>
+                <div class="input-group">
+                    <label for="first-name" id="lbl-fname">First Name<span class="required">*</span></label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                    <span class="error-msg" id="err-fname">First name is required.</span>
+                </div>
+                <div class="input-group">
+                    <label for="last-name" id="lbl-lname">Last Name<span class="required">*</span></label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                    <span class="error-msg" id="err-lname">Last name is required.</span>
+                </div>
+                <div class="input-group full-width">
+                    <label for="nickname" id="lbl-nick">Nickname / What should we call you <span class="optional">(Optional)</span></label>
+                    <input type="text" id="nickname" placeholder="What do you prefer us to call you?">
+                </div>
             </div>
         </div>
 
         <div class="form-step" id="step-2">
-            <p class="step-subtitle">Step 2</p>
-            <h2 class="step-title">Contact Method</h2>
-            <p class="step-description">Select how you prefer our team to contact you.</p>
+            <p class="step-subtitle" id="step-2-sub">Step 2</p>
+            <h2 class="step-title" id="step-2-title">Contact Method</h2>
+            <p class="step-description" id="step-2-desc">Select how you prefer our team to contact you.</p>
 
-    <div class="contact-preference-grid">
-    <label class="pref-card">
-        <input type="radio" name="contact-method" value="email" checked>
-        <div class="pref-content">
-        <img src="images/mail.png" alt="Email" class="pref-image-icon">
-        <span class="pref-label">Email Address</span>
-        </div>
-    </label>
-    <label class="pref-card">
-        <input type="radio" name="contact-method" value="phone">
-        <div class="pref-content">
-        <img src="images/phone.png" alt="Phone" class="pref-image-icon">
-        <span class="pref-label">Phone / Mobile</span>
-        </div>
-    </label>
-    </div>
+            <div class="contact-preference-grid">
+                <label class="pref-card">
+                    <input type="radio" name="contact-method" value="email" checked>
+                    <div class="pref-content">
+                        <img src="images/mail.png" alt="Email" class="pref-image-icon">
+                        <span class="pref-label" id="pref-email">Email Address</span>
+                    </div>
+                </label>
+                <label class="pref-card">
+                    <input type="radio" name="contact-method" value="phone">
+                    <div class="pref-content">
+                        <img src="images/phone.png" alt="Phone" class="pref-image-icon">
+                        <span class="pref-label" id="pref-phone">Phone / Mobile</span>
+                    </div>
+                </label>
+            </div>
 
             <div class="form-grid" style="margin-top: 1.5rem;">
-            <div class="input-group full-width" id="email-field-group">
-                <label for="contact-email">Email Address<span class="required">*</span></label>
-                <input type="email" id="contact-email" placeholder="example@email.com">
-                <span class="error-msg">Please enter a valid email address.</span>
-            </div>
-            <div class="input-group full-width hidden" id="phone-field-group">
-                <label>Phone Number<span class="required">*</span></label>
-                <div class="phone-split-container">
-                <select id="country-code" class="phone-country-select">
-                    <option value="+1">🇺🇸 +1 (US)</option>
-                    <option value="+34" selected>🇪🇸 +34 (ES)</option>
-                    <option value="+52">🇲🇽 +52 (MX)</option>
-                    <option value="+57">🇨🇴 +57 (CO)</option>
-                    <option value="+54">🇦🇷 +54 (AR)</option>
-                    <option value="+56">🇨🇱 +56 (CL)</option>
-                    <option value="+51">🇵🇪 +51 (PE)</option>
-                </select>
-                <input type="tel" id="contact-phone" class="phone-local-input" placeholder="600-000000" maxlength="11">
+                <div class="input-group full-width" id="email-field-group">
+                    <label for="contact-email" id="lbl-contact-email">Email Address<span class="required">*</span></label>
+                    <input type="email" id="contact-email" placeholder="example@email.com">
+                    <span class="error-msg" id="err-email">Please enter a valid email address.</span>
                 </div>
-                <span class="error-msg">Please enter a valid phone number.</span>
-            </div>
+                <div class="input-group full-width hidden" id="phone-field-group">
+                    <label id="lbl-contact-phone">Phone Number<span class="required">*</span></label>
+                    <div class="phone-split-container">
+                        <select id="country-code" class="phone-country-select">
+                            <option value="+1">🇺🇸 +1 (US)</option>
+                            <option value="+34" selected>🇪🇸 +34 (ES)</option>
+                            <option value="+52">🇲🇽 +52 (MX)</option>
+                            <option value="+57">🇨🇴 +57 (CO)</option>
+                            <option value="+54">🇦🇷 +54 (AR)</option>
+                            <option value="+56">🇨🇱 +56 (CL)</option>
+                            <option value="+51">🇵🇪 +51 (PE)</option>
+                        </select>
+                        <input type="tel" id="contact-phone" class="phone-local-input" placeholder="600-000000" maxlength="11">
+                    </div>
+                    <span class="error-msg" id="err-phone">Please enter a valid phone number.</span>
+                </div>
             </div>
         </div>
 
         <div class="form-step" id="step-3">
-            <p class="step-subtitle">Step 3</p>
-            <h2 class="step-title">Note</h2>
-            <p class="step-description">Help us categorize your request and leave your detailed comments below.</p>
+            <p class="step-subtitle" id="step-3-sub">Step 3</p>
+            <h2 class="step-title" id="step-3-title">Note</h2>
+            <p class="step-description" id="step-3-desc">Help us categorize your request and leave your detailed comments below.</p>
 
             <div class="form-grid">
-            <div class="input-group full-width">
-                <label>Select a Category<span class="required">*</span></label>
-                <div class="category-selector">
-                <button type="button" class="cat-btn active" data-category="concert">Make A Suggestion</button>
-                <button type="button" class="cat-btn" data-category="product">Concern</button>
-                <button type="button" class="cat-btn" data-category="touch">Keep in Touch</button>
-                <button type="button" class="cat-btn" data-category="other">Other</button>
+                <div class="input-group full-width">
+                    <label id="lbl-category">Select a Category<span class="required">*</span></label>
+                    <div class="category-selector">
+                        <button type="button" class="cat-btn active" data-category="concert" id="cat-btn-1">Make A Suggestion</button>
+                        <button type="button" class="cat-btn" data-category="product" id="cat-btn-2">Concern</button>
+                        <button type="button" class="cat-btn" data-category="touch" id="cat-btn-3">Keep in Touch</button>
+                        <button type="button" class="cat-btn" data-category="other" id="cat-btn-4">Other</button>
+                    </div>
+                    <input type="hidden" id="selected-category" value="concert">
                 </div>
-                <input type="hidden" id="selected-category" value="concert">
-            </div>
 
-            <div class="input-group full-width" style="margin-top: 0.5rem;">
-                <label for="contact-reason">Reason for Contact<span class="required">*</span></label>
-                <textarea id="contact-reason" rows="5" placeholder="Write your questions, concerns, or comments here..." required></textarea>
-                <span class="error-msg">Please write the reason for your message.</span>
-            </div>
+                <div class="input-group full-width" style="margin-top: 0.5rem;">
+                    <label for="contact-reason" id="lbl-reason">Reason for Contact<span class="required">*</span></label>
+                    <textarea id="contact-reason" rows="5" placeholder="Write your questions, concerns, or comments here..." required></textarea>
+                    <span class="error-msg" id="err-reason">Please write the reason for your message.</span>
+                </div>
             </div>
         </div>
 
-        <!-- Dynamic Success Message (Hidden initially) -->
         <div class="success-message-box hidden" id="success-screen">
             <span class="success-icon">✓</span>
-            <h2 class="success-title">Form Submitted!</h2>
-            <p class="success-text">Your request has been processed successfully. We will contact you very soon.</p>
+            <h2 class="success-title" id="succ-title">Form Submitted!</h2>
+            <p class="success-text" id="succ-desc">Your request has been processed successfully. We will contact you very soon.</p>
         </div>
 
-        <!-- Footer Navigation -->
         <div class="wizard-footer" id="wizard-footer-nav">
-            <button type="button" id="prev-btn" class="nav-btn btn-secondary invisible">
-            ‹ Back
-            </button>
-            <button type="button" id="next-btn" class="nav-btn btn-primary">
-            Next Step ›
-            </button>
+            <button type="button" id="prev-btn" class="nav-btn btn-secondary invisible">‹ Back</button>
+            <button type="button" id="next-btn" class="nav-btn btn-primary">Next Step ›</button>
         </div>
 
         </form>
     </div>
+</section>
 
-    </section>
-
-    <!-- GSAP Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
